@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical"
+    tools:context="com.gatsensoft.kishi.PuzzleActivity">
+
+    <RelativeLayout
+        android:id="@+id/piece_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tile1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tile1"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tile1"
+            android:background="@drawable/tile2"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tile2"
+            android:background="@drawable/tile3"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tile1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/tile4"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tile1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/tile4"
+            android:background="@drawable/tile5"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/tile9"
+            android:layout_alignLeft="@+id/tile3"
+            android:layout_alignStart="@+id/tile3"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tile6"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tile4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/tile7"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tile4"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/tile7"
+            android:background="@drawable/tile8"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tile4"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/tile8"
+            android:background="@drawable/tile9"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tile7"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/tile10"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tile7"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/tile10"
+            android:background="@drawable/tile11"
+            android:onClick="tileClicked" />
+
+        <Button
+            android:id="@+id/tile12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tile7"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/tile11"
+            android:background="@drawable/tile12"
+            android:onClick="tileClicked" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/piece_container"
+        android:layout_alignRight="@id/piece_container"
+        android:layout_alignStart="@+id/piece_container"
+        android:layout_alignLeft="@id/piece_container"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:text="Solve The Puzzle"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="normal|bold|italic" />
+
+    <Spinner
+        android:id="@+id/spnType"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignLeft="@id/textView"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:entries="@array/spnTypeEntries"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spnDifficulty"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/spnType"
+        android:entries="@array/spnDifficultyEntries"
+        android:spinnerMode="dropdown" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spnType"
+        android:layout_alignLeft="@id/spnType"
+        android:layout_below="@+id/spnType"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/btnShuffle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnType"
+        android:layout_toRightOf="@+id/chronometer"
+        android:onClick="shuffleTiles"
+        android:text="Shuffle" />
+
+</RelativeLayout>
